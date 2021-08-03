@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +9,28 @@
 </head>
 <body>
   <main>
-    <header>
+    <header class="header">
+      <span class="hero"></span>
       <nav>
-        <a href="/">Inicio</a>
-        <a href="fotos.html">Fotos</a>
+        <ul class="items">
+          <li class="item">
+            <a href="/">Inicio</a>
+          </li>
+          <li class="item">
+            <a href="fotos.html">Fotos</a>
+          </li>
+        </ul>
+        <div class="mode-container">
+          <div class="mode-switch">
+            <div class="mode-circle" ></div>
+            <input type="checkbox" id="mode_check">
+          </div>
+        </div>
       </nav>
       <h1>Estas son mis Vacaciones</h1>
-      <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+      <article class="presentation cards">
+        <p>Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
+      </article>
     </header>
 
     <section>
@@ -96,5 +111,7 @@
     </section>
     
   </main>
+
+  <script src="./script/main.js"></script>
 </body>
 </html>
